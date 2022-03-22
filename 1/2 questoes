@@ -1,0 +1,98 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	void menu_jogos();
+	menu_jogos();
+	void pergunta_resposta();
+	pergunta_resposta();
+	
+	return 0;
+}
+void menu_jogos();
+void pergunta_resposta();
+int num_menu;
+int num_alter;
+
+void menu_jogos(){
+	printf("MENU DE JOGOS\n");
+	printf("1 - pergunta/resposta\n");
+	printf("2 - adivinhar numero\n");
+	printf("3 - olho da cobra\n");
+	printf("4 - pergunta/resposta\n");
+	
+	printf("Escolha uma das opcoes: ");
+	scanf("%d",&num_menu);
+	
+	if(num_menu == 1){
+		pergunta_resposta();
+	}
+	
+}
+
+void pergunta_resposta(){
+	system("cls || clear");
+	printf("Normalmente, quantos litros de sangue uma pessoa tem? Em media, quantos sao retirados numa doacao de sangue?\n");
+	printf("1) Tem entre 2 a 4 litros. Sao retirados 450 mililitros.\n");
+	printf("2) Tem entre 4 a 6 litros. Sao retirados 450 mililitros.\n");
+	printf("3) Tem 10 litros. Sao retirados 2 litros.\n");
+	printf("Digite o numero da sua resposta\n");
+	scanf("%d",&num_alter);
+	
+	if(num_alter == 1){
+		printf("Alternativa Incorreta!\n");
+		printf("Alternativa correta --> 2) Tem entre 4 a 6 litros. Sao retirados 450 mililitros.\n\n");
+	}else if(num_alter == 2){
+		printf("Alternativa correta --> 2) Tem entre 4 a 6 litros. Sao retirados 450 mililitros.\n\n");
+	}else if(num_alter == 3)
+	{
+		printf("Alternativa Incorreta!\n");
+		printf("Alternativa correta --> 2) Tem entre 4 a 6 litros. Sao retirados 450 mililitros.\n\n");
+	}
+	
+	
+	printf("De quem eh a famosa frase Penso, logo existo?\n");
+	printf("1) Platao.\n");
+	printf("2) Galileu Galilei.\n");
+	printf("3) Descartes\n");
+	printf("Digite o numero da sua resposta\n");
+	scanf("%d",&num_alter);
+	
+	
+	if(num_alter == 1){
+		printf("Alternativa Incorreta!\n");
+		printf("Alternativa correta --> 3) Descartes.\n\n");
+	}else if(num_alter == 2){
+		printf("Alternativa Incorreta!\n");
+		printf("Alternativa correta --> 3) Descartes.\n\n");
+	}else if(num_alter == 3)
+	{
+		printf("Alternativa correta.\n\n");
+	}
+	
+	printf("De onde eh a invenção do chuveiro eletrico?\n");
+	printf("1) Franca.\n");
+	printf("2) Inglaterra.\n");
+	printf("3) Brasil.\n");
+	printf("Digite o numero da sua resposta\n\n");
+	scanf("%d",&num_alter);
+	
+	if(num_alter == 1){
+		printf("Alternativa Incorreta!\n");
+		printf("Alternativa correta --> 3) Descartes.\n\n");
+	}else if(num_alter == 2){
+		printf("Alternativa Incorreta!\n");
+		printf("Alternativa correta --> 3) Descartes.\n\n");
+	}else if(num_alter == 3)
+	{
+		printf("Alternativa correta.\n\n");
+	}
+	
+	
+	
+	
+	menu_jogos();
+}
+
+void adivinhar_numero(
